@@ -115,7 +115,7 @@ h1 {
 
 .Section_3 {
     /* Ограничение максимальной ширины блока */
-    max-width: 1200px; 
+    max-width: 1440px; 
     margin: 0 auto;
     border: 2px;
     min-height: 10px;
@@ -130,6 +130,7 @@ h1 {
     line-height: 20px; /* 142.857% */
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-top: 100px;
 }
 
 .title {
@@ -141,7 +142,8 @@ h1 {
     line-height: 42px; /* 107.692% */   
 }
 .cards {
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 100px;
     text-align: center;
 
 }
@@ -154,9 +156,11 @@ h1 {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 42px;
+    padding-left: 136px;
+    padding-right: 136px;
 }
 
 .card-img {
@@ -241,11 +245,17 @@ ul {
 }
 
 .container_3 {
-    max-width: 1200 px;
+    max-width: 1440 px;
     margin: 0 auto;
 }
+.projects {
+    padding: 136px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background: #F7F7F7;
+}
 .section_team {
-    padding: 100px 40px;
+    padding: 100px 136px;
     
 }
 .teams-title {
@@ -256,12 +266,13 @@ ul {
     line-height: 26px; /* 152.941% */
 }
 .teams_subtitle {
-    color: #1B1A1A;
-    font-size: 17px;
+    color: #645C55;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 152.941% */
+    line-height: 14px; /* 100% */
 }
+
 .flex-team {
     display: flex;
     justify-content:space-between;
@@ -297,7 +308,38 @@ ul {
     font-weight: 400;
     line-height: 38px; /* 118.75% */
 }
-
+.featured-projects {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.feat-proj {
+    color: #1B1A1A;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 107.692% */
+}
+.feat-projsub {
+    color: #645C55;
+    max-width: 581px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+}
+.proj-txt {
+    color: #1B1A1A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
 .projects-box {
     display: flex;
     justify-content: space-between;
@@ -337,6 +379,33 @@ ul {
     background: url(bck3.png) center/cover no-repeat;
 }
 
+.h3 {
+     /* максимальное значение ширины блока */
+     max-width: 600px;
+     color: #1B1A1A;
+     font-size: 40px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 42px; /* 105% */
+}
+.prefooter-flex {
+    display: flex;
+    /* выравнивание */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.prefooter-txt {
+    max-width: 570px;
+}
+.pref-container {
+    max-width: 1440px;
+    background: #CEC4BC;;
+    margin: 0 auto;
+    padding: 120px;
+    padding-left: 136px;
+    padding-right: 136px;
+}
 .footer {
     padding: 60px 0;
 }
@@ -352,6 +421,7 @@ ul {
     max-width: 430px;
 }
 .footer-logo {
+    margin-bottom: 15px;
 }
 
 .footer-text {
@@ -367,17 +437,24 @@ ul {
     .main-img {
         display: none;
     }
-}
-
-@media (max-width: 850px) {
     .nav-list {
         /* скрываем элемент */
         display: none;
     }
     .burger {
         display: block;
+        margin-left: 8px;
     }
+}
 
+@media (max-width: 850px) {
+
+    .projects {
+        padding: 80px 80px;
+    }
+    .section_team {
+        padding: 80px 80px;
+    }
     .text_team {
                 width: 65%;
                 margin-bottom: 25px;
@@ -402,6 +479,19 @@ ul {
     .container_3 {
         padding: 0 2%;
     }
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .projects {
+        padding: 80px 40px;
+    }
+    .section_team {
+        padding: 80px 40px;
+    }
+    .pref-container {
+        padding: 80px 40px;
+    }
     .teams-item {
         width: 90%;
     }
@@ -422,23 +512,53 @@ ul {
         width: 80%;
         height: 360px;
     }
+    .nav {
+        gap: 8px;
+        flex-direction: column;
+    }
+    .button {
+        padding: 8px 14px;
+        border-radius: 8px;
+        font-size: 14px;
+        line-height: 20px;
+    }
     .MainScreen { 
         padding: 100px 70px;
     }
-    .MainScreen > h1 {
-        font-size: 45px;
-        line-height: 60px;
-        ;
+    .MainScreen  h1 {
+        font-size: 32px;
+        line-height: 36px;
     }
     .container_Section_2 {
         padding: 0 2%;
-
+    }
+    .h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .feat-proj {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .feat-projsub {
+        font-size: 20px;
+        line-height: 24px;
     }
     .title {
         font-size: 30px;
     }
     .text_team {
-        width: 90%;
+        width: 100%;
 
+    }
+    .footer-flex {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .footer-icons {
+        margin-top: 12px;
+    }
+    .teams {
+        width: 100%;
     }
 }
