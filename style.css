@@ -369,8 +369,7 @@ ul {
 .bg1 {
     background: url(bck1.png) center/cover no-repeat;
 }
-.item-txt {
-}
+
 
 .bg2 {
     background: url(bck2.png) center/cover no-repeat;
@@ -424,8 +423,7 @@ ul {
     margin-bottom: 15px;
 }
 
-.footer-text {
-}
+
 .footer-icons {
     width: 10%;
     min-width: 112px;
